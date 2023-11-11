@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.InitBinder;
 
-import com.example.demo.service.InquiryNotFoundException;
+import com.example.demo.exception.InquiryNotFoundException;
 
 /**
  * @author yuich

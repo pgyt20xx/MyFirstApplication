@@ -3,13 +3,16 @@ package com.example.demo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.dao.InquiryDao;
 import com.example.demo.entity.Inquiry;
+import com.example.demo.exception.InquiryNotFoundException;
 
 @Service
-public class InquiryServiceImpl implements InquiryService {
+@Profile("default")
+class InquiryServiceImpl implements InquiryService {
 
 	private final InquiryDao dao;
 

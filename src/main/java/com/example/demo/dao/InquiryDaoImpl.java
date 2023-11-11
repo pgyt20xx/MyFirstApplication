@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.Inquiry;
 
 @Repository
-public class InquiryDaoImpl implements InquiryDao {
+class InquiryDaoImpl implements InquiryDao {
 
 	private final JdbcTemplate jdbcTemplate;
 
